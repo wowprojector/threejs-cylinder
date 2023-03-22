@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cylinder List</title>
+  <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+        }
+      }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <div class="search-box">
+    <input type="text" id="search-input">
+    <span id="searchInput-cursor"></span>
+  </div>
+  <div id="webgl-container"></div>
+  <div id="css3d-container" style="display:none;">
+    <a href="https://naver.com" class="artist-name" target="_blank">고현정1</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김겨울2</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김신욱3</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김은형4</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김정은5</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">리 강6</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">문서진7</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">박순철8</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">고현정9</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김겨울10</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김신욱11</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김은형12</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김정은13</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">리 강14</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">문서진15</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">박순철16</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">고현정17</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김겨울18</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김신욱19</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김은형20</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">김정은21</a>
+    <a href="https://naver.com" class="artist-name" target="_blank">리 강22</a>
+  </div>
+  <div class="img-container" style="display:none;">
+    <img src="/assets/1.jpg" alt="">
+    <img src="/assets/2.jpg" alt="">
+    <img src="/assets/3.jpeg" alt="">
+    <img src="/assets/4.jpg" alt="">
+    <img src="/assets/5.jpg" alt="">
+    <img src="/assets/6.jpg" alt="">
+    <img src="/assets/7.jpg" alt="">
+    <img src="/assets/8.jpeg" alt="">
+  </div>
+</body>
+
+</html>
+
+<script>
+  const input = document.getElementById('search-input');
+  const cursor = document.getElementById('searchInput-cursor');
+  input.addEventListener('click', () => {
+    cursor.style.display = 'none';
+  });
+
+</script>

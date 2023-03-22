@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    position: relative;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#webgl-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a {
+    display: block;
+    font-size: 65px;
+    color: black;
+    background-color: #fff;
+    z-index: 9999;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    transition: opacity 0.3s ease;
+    background: linear-gradient(45deg,#FF5F75,#FB5BFE,#FFFFFF, #FF9D78,#FFD278,#FFFFFF, #78FF96,#7B78FF,#A45DFF, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: glowing 20s linear infinite;
+    background-size: 400%;
+}
+
+a:hover {
+    color: transparent;
+    transition: color 500ms ease;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.search-box {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    z-index: 999;
+}
+#search-input {
+    position: relative;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1.5px solid #888;
+    outline: 1.5px solid #888;
+    font-size: 15px;
+}
+#search-input:focus {
+    outline: 1px solid #ff7106;
+    border: 1px solid #ff7106;
+}
+#searchInput-cursor {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 1px;
+    height: 16px;
+    background-color: #333;
+    animation: blinkCursor 1s infinite;
+    /* pointer-events: none; */
+}
+
+@keyframes blinkCursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+      /* visibility: hidden; */
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
